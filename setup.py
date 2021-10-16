@@ -18,7 +18,10 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     keywords=['email', 'smtp'],
-    packages=['emailservice'],
+    packages=find_packages(),
+    py_modules=['emailservice'],
+    package_dir={'': 'emailservice/src'},
+    install_requires=[],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
