@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-VERSION = '0.0.4'
+VERSION = '0.0.5'
 DESCRIPTION = 'Email Service Package'
 LONG_DESCRIPTION = 'A package that allows to send emails with ease.'
 
@@ -16,7 +16,7 @@ setup(
     url="https://github.com/Chaitanyadp/EmailService.git",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
+    long_description=long_description,
     keywords=['email', 'smtp'],
     packages=['emailservice'],
     classifiers=[
