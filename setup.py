@@ -21,7 +21,7 @@ setup(
     install_requires=['smtplib'],
     keywords=['email', 'smtp'],
     classifiers=[
-        "Development Status :: 5 - Production",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Microsoft :: Windows",
