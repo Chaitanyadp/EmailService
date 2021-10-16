@@ -1,6 +1,6 @@
 
 """
-This is a package that allows to send emails with ease.
+This is a package that allows to send emails with ease using the smtplib and email modules.
 """
 
 import smtplib
@@ -119,6 +119,24 @@ class EmailService:
                 "Recipients must be a list or tuple, is {}".format(type(in_recipients)))
 
         self.recipients = in_recipients
+
+    def set_cc_bcc(self, cc, bcc):
+        cc = []
+        if self.msg.CC:
+            if isinstance(self.msg.CC, str):
+                cc = [self.msg.CC]
+            else:
+                cc = list(self.msg.CC)
+
+        bcc = []
+        if self.msg.BCC:
+            if isinstance(self.msg.BCC, str):
+                bcc = [self.msg.BCC]
+            else:
+                bcc = list(self.msg.BCC)
+
+        self.recipients.append(cc)
+        self.recipients.append(bcc)
 
     def add_recipient(self, in_recipient):
         """Adds a recipient to the back of the list

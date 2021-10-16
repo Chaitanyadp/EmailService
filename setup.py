@@ -9,20 +9,22 @@ LONG_DESCRIPTION = 'A package that allows to send emails with ease.'
 
 # Setting up package settings
 setup(
-    name="emailservicepkg",
+    name="emailservice",
     version=VERSION,
     author="Chaitanya Patil",
     author_email="<cdpgdg@gmail.com>",
+    url="https://github.com/Chaitanyadp/EmailService.git",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
     packages=find_packages(),
     install_requires=['smtplib'],
-    keywords=['python', 'email', 'mail', 'API'],
+    keywords=['email', 'smtp'],
     classifiers=[
-        "Development Status :: Production",
+        "Development Status :: 5 - Production",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Microsoft :: Windows",
+        "License :: OSI Approved :: MIT License"
     ]
 )
