@@ -11,7 +11,7 @@ This email sender python package gives ease of acess to Python's built-in SMTP m
 ## Installation
 
 ```bash
-pip install send-email-python
+pip install emailservice
 ```
 
 ## Usage
